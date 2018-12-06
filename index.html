@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta author="Leinh">
+    <link rel="stylesheet" href="style.css" id="ambiance">
+    <title>Star Wars Battles</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div id="title">Star Wars Battles</div>
+
+    </header>
+
+
+    <div id="logo" onclick="change()"></div>
+    <div id="teamia">Sith</div>
+    <div id="scoreia">5</div>
+    <div id="content">
+        <div id="choixia"></div>
+        <div id="resultat"></div>
+    </div>
+    <div class="regles">
+        The warrior destroys the soldier.<br>
+        The marksman beats the force user. <br>
+        The force user dominates the warrior. <br>
+        General, you must win this battle. <br>
+        Your side needs you to finish this war.
+    </div>
+    <div id="teamjoueur">Jedi</div>
+    <div id="scorejoueur">5</div>
+    <footer>
+        <div id="choixjoueur">
+            <div id="name1">Warrior</div>
+            <div id="name2">Soldier</div>
+            <div id="name3">Sage</div>
+            <div id="warrior" onclick="game(0)"></div>
+            <div id="marksman" onclick="game(1)"></div>
+            <div id="force" onclick="game(2)"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </footer>
+
+</body>
+
+</html>

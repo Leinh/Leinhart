@@ -1,0 +1,204 @@
+html{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(images/jedi_wallpaper.jpg);
+    background-position: fixed;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+@font-face{
+    font-family:starwars;
+    src:url(images/Death\ Star.otf);
+}
+
+header{
+    position:absolute;
+    width: 100%;
+    top:0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#title{
+ margin: 0 auto;
+font-family: starwars;
+color:gold;
+font-size:55px;
+width: 300px;
+text-align: center;
+text-shadow: 3px 3px 1px black;
+}
+
+#logo{
+    position:absolute;
+    right: 10px;
+    top: 10px;
+    width: 60px;
+    height: 60px;
+    background-image: url(images/empire.png);
+    background-size: 100%;
+
+}
+
+#teamia{
+    position:absolute;
+    top: 200px;
+    left: 200px;
+    width: 150px;
+    color:red;
+    font-family:starwars;
+    height: 50px;
+    font-size: 35px;
+   
+}
+
+#teamjoueur{
+    position:absolute;
+    bottom: 200px;
+    right: 200px;
+    width: 150px;
+    color:lightblue;
+    font-family:starwars;
+    height: 50px;
+    font-size: 35px;
+    
+}
+
+#scoreia{
+    position:absolute;
+    top:200px;
+    right:250px;
+    width: 60px;
+    height: 60px;
+    font-size: 60px;
+   font-family: starwars;
+    color:red;
+    text-align: center;
+}
+
+#scorejoueur{
+    position:absolute;
+    bottom:200px;
+    left:250px;
+    width: 60px;
+    height: 60px;
+    font-size: 60px;
+    font-family: starwars;
+    color:lightblue;
+    text-align: center;
+}
+
+#content{
+    padding: 0;
+    margin: 0 auto;
+    width: 60%;
+}
+
+#choixia{
+    padding: 0;
+    margin: 150px auto 0;
+    width: 300px;
+    height: 300px;
+    
+}
+
+#resultat{
+    margin: 30px auto;
+    width: 300px;
+    height: 100px;
+    font-family: starwars;
+    color:gold;
+    text-shadow: 1px 2px 1px black;
+    text-align: center;
+   
+}
+
+.regles{
+    position:absolute;
+    width: 400px;
+    font-family: starwars;
+    color:gold;
+    text-shadow: -3px 3px 1px black;
+    font-size: 18px;
+    text-align: justify;
+    top:400px;
+    left: 30px;
+}
+
+footer{
+    position:absolute;
+    margin: 0 ;
+    padding: 0;
+    bottom: 10px;
+    width: 100%;
+    left: 0;
+}
+
+#choixjoueur{
+    padding: 0;
+    margin: 0 auto;
+    width: 350px;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+
+}
+
+#name1,#name2,#name3{
+    width: 100px;
+    font-family: starwars;
+    color:lightblue;
+    text-align: center;
+    text-shadow: 1px 2px 1px black;
+
+}
+
+#warrior{
+    width: 100px;
+    height: 100px;
+    background-image: url(images/jedi_warrior.png);
+    background-size: 100%;
+    border: 2px solid lightblue;
+}
+
+#marksman{
+    width: 100px;
+    height: 100px;
+    background-image: url(images/republic_trooper.png);
+    background-size: 100%;
+    border: 2px solid lightblue;
+}
+
+#force{
+    width: 100px;
+    height: 100px;
+    background-image: url(images/jedi_sage.png);
+    background-size: 100%;
+    border: 2px solid lightblue;
+}
+
+.recommencer{
+    font-family:starwars;
+    font-size: 46px;
+    color:gold;
+    text-shadow: 1px 2px 1px black;
+    width: 300px;
+    text-align: center;
+    border:2px solid gold;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+

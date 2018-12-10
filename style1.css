@@ -9,6 +9,7 @@ body{
     background-image: url(images/imperial_wallpaper.jpg);
     background-position: fixed;
     background-size: 100%;
+    background-repeat: no-repeat;
     overflow: hidden;
 }
 

@@ -1,3 +1,28 @@
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+var x = document.cookie;
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
 var a = 1;
 
 function imageia(n) {
@@ -12,6 +37,7 @@ function change() {
         document.getElementById("name3").innerHTML = "Sorcerer";
         document.getElementById("teamjoueur").innerHTML = "Sith";
         document.getElementById("teamia").innerHTML = "Jedi";
+        setCookie("order","jedi",4000);
 
         a++;
     }
@@ -21,7 +47,7 @@ function change() {
         document.getElementById("name3").innerHTML = "Sage";
         document.getElementById("teamjoueur").innerHTML = "Jedi";
         document.getElementById("teamia").innerHTML = "Sith";
-        a++;
+        setCookie("order","sith",4000);
         a = 1;
     }
 }
@@ -290,5 +316,12 @@ function restart() {
 }
 
 
-
+if(getCookie("order")=="jedi"){
+    a=1;
+    change();
+}
+else if(getCookie("order")=="sith"){
+    a=2;
+    change();
+}
 
